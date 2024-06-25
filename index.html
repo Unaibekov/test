@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Karakuz Market</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,28 +12,38 @@
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="header-content">
+        <img class="logos-mobile" src="img/logos.svg" alt="logos">
         <div class="logos">
-            <img class="logo logo-karakuz" src="img/logo-karakuz.svg" alt="logo-karakuz">
-            <img class="logo logo-bftn" src="img/logo-bftn.svg" alt="logo-bftn">
+            <div class="logo-full">
+                <img class="logo-karakuz-el" src="img/logo-karakuz-el.svg" alt="logo-karakuz">
+                <div class="logo-texts">
+                    <img class="logo-karakuz-text" src="img/logo-karakuz-text.svg" alt="logo-karakuz">
+                    <img class="logo-karakuz-number" src="img/logo-karakuz-number.svg" alt="logo-karakuz">
+                </div>
+            </div>
+            <img class="logo-bftn" src="img/logo-bftn.svg" alt="logo-bftn">
         </div>
         <nav class="nav">
             <ul>
+                <li><a href="#main">Главная</a></li>
                 <li><a href="#about">О нас</a></li>
                 <li><a href="#place">Место проведения</a></li>
-                <li><a href="#program">Программа</a></li>
+                <li><a href="#programm">Программа</a></li>
                 <li><a href="#expectation">Что ожидает</a></li>
                 <li><a href="#category">Категории отбора</a></li>
+                <li><a href="#application">Принять участие</a></li>
             </ul>
             <div class="close-menu">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.6949 0.304985C14.2975 -0.0923851 13.6533 -0.092384 13.2559 0.304986L7.49992 6.06097L1.74402 0.305068C1.34665 -0.0923023 0.702384 -0.0923024 0.305013 0.305068C-0.0923568 0.702438 -0.0923558 1.3467 0.305014 1.74407L6.06091 7.49997L0.304864 13.256C-0.0925065 13.6534 -0.0925067 14.2977 0.304863 14.695C0.702234 15.0924 1.3465 15.0924 1.74387 14.695L7.49992 8.93898L13.2561 14.6951C13.6534 15.0925 14.2977 15.0925 14.6951 14.6951C15.0924 14.2977 15.0924 13.6535 14.6951 13.2561L8.93892 7.49997L14.6949 1.74399C15.0923 1.34662 15.0923 0.702355 14.6949 0.304985Z"/>
                 </svg>
             </div>
+            <img class="nav-pattern" src="img/pattern-gray-ex-bottom.svg" alt="about-pattern-gray">
         </nav>
         <div class="overlay"></div>
-        <div class="open-menu">
+        <div class="menu-open">
             <svg width="39" height="39" viewBox="0 0 39 39" fill="" xmlns="http://www.w3.org/2000/svg">
                 <rect width="39" height="39" rx="19.5" fill="#64B572"/>
                 <path d="M12.1667 27.5C11.7889 27.5 11.4725 27.372 11.2174 27.116C10.9614 26.8609 10.8334 26.5444 10.8334 26.1667C10.8334 25.7889 10.9614 25.4724 11.2174 25.2173C11.4725 24.9613 11.7889 24.8333 12.1667 24.8333H26.8334C27.2112 24.8333 27.528 24.9613 27.784 25.2173C28.0392 25.4724 28.1667 25.7889 28.1667 26.1667C28.1667 26.5444 28.0392 26.8609 27.784 27.116C27.528 27.372 27.2112 27.5 26.8334 27.5H12.1667ZM12.1667 20.8333C11.7889 20.8333 11.4725 20.7053 11.2174 20.4493C10.9614 20.1942 10.8334 19.8778 10.8334 19.5C10.8334 19.1222 10.9614 18.8053 11.2174 18.5493C11.4725 18.2942 11.7889 18.1667 12.1667 18.1667H22.8334C23.2112 18.1667 23.528 18.2942 23.784 18.5493C24.0392 18.8053 24.1667 19.1222 24.1667 19.5C24.1667 19.8778 24.0392 20.1942 23.784 20.4493C23.528 20.7053 23.2112 20.8333 22.8334 20.8333H12.1667ZM12.1667 14.1667C11.7889 14.1667 11.4725 14.0391 11.2174 13.784C10.9614 13.528 10.8334 13.2111 10.8334 12.8333C10.8334 12.4556 10.9614 12.1387 11.2174 11.8827C11.4725 11.6276 11.7889 11.5 12.1667 11.5H26.8334C27.2112 11.5 27.528 11.6276 27.784 11.8827C28.0392 12.1387 28.1667 12.4556 28.1667 12.8333C28.1667 13.2111 28.0392 13.528 27.784 13.784C27.528 14.0391 27.2112 14.1667 26.8334 14.1667H12.1667Z" fill="#fff"/>
@@ -42,17 +52,14 @@
     </div>
 </header>
 
-<div class="main">
+<div id="main" class="main">
     <img class="pattern main-pattern-gray" src="img/pattern_gray_2.svg" alt="main-pattern-gray">
     <img class="pattern main-pattern-red" src="img/pattern_red_2.svg" alt="main-pattern-red">
-    <div class="main-images">
-        <img class="main-image-girl" src="img/main-image-girl.png" alt="main-image-girl">
-        <img class="main-green-cloth" src="img/main-green-cloth.png" alt="main-green-cloth">
-    </div>
+    <img class="main-image-girl" src="img/main-image-girl2.png" alt="main-image-girl">
     <div class="container">
         <img class="main-heading" src="img/main-heading.svg" alt="main-heading">
     </div>
-    <div class="container about">
+    <div id="about" class="container about">
         <div class="title">О нас</div>
         <p class="strong-text">20-21 июля пройдет Фестиваль модной индустрии «Модный Альметьевск», сердцем которого станет двухдневный Маркет где будут представлены дизайнеры со всей России и не только!</p>
         <p class="strong-text">
@@ -93,14 +100,14 @@
                 </div>
             </div>
         </div>
-        <img src="img/place-image.svg" alt="place-image">
+        <img class="place-image" src="img/place-image.svg" alt="place-image">
     </div>
     <img class="pattern market-pattern-green-right" src="img/pattern-gray-place-right.svg" alt="about-pattern-gray">
     <img class="pattern market-pattern-green-left" src="img/pattern-gray-place-left.svg" alt="about-pattern-gray">
 </section>
 
 <section id="programm" class="programm">
-    <div class="container">
+    <div style="position: relative; z-index: 4;" class="container">
         <div style="margin-bottom: 20px;" class="title">Программа</div>
         <div style="text-align: center; max-width: 900px; width: 100%; margin: auto;" class="strong-text">Дорогие дизайнеры, вы также сможете посетить в&nbsp;рамках модного фестиваля: </div>
         <div class="programm-title">20 июля 2024</div>
@@ -114,13 +121,13 @@
             <div class="programm-item aic">
                 <img class="diz-photo" src="img/dz nadi.svg" alt="diz">
                 <div class="programm-item-content">
-                    <div class="diz-name">Нади Uz (г. Ташкент)</div>
+                    <div class="diz-name">Нади Uz (Ташкент)</div>
                     <div class="diz-info">Дизайнер, Узбекская Коко Шанель</div>
                 </div>
             </div>
             <div class="programm-item aic">
                 <div class="programm-item-content">
-                    <div class="diz-name">Самандар Сараев (г. Ташкент)</div>
+                    <div class="diz-name">Самандар Сараев (Ташкент)</div>
                     <div class="diz-info">Cоорганизатор «Uzbekistan Fashion Week».<br>Активный участник недель мод в странах Юго-Восточной Азии</div>
                 </div>
                 <img class="diz-photo" src="img/dz samand.svg" alt="diz">
@@ -128,21 +135,21 @@
             <div class="programm-item aic">
                 <img class="diz-photo" src="img/dz aver.svg" alt="diz">
                 <div class="programm-item-content">
-                    <div class="diz-name">Екатерина Аверьянова (г. Москва)</div>
+                    <div class="diz-name">Екатерина Аверьянова (Москва)</div>
                     <div class="diz-info">Профессиональный фотограф из мира моды и не только</div>
                 </div>
             </div>
             <div class="programm-item aic">
                 <div class="programm-item-content">
-                    <div class="diz-name">Гузель Гарипова (г. Казань)</div>
+                    <div class="diz-name">Гузель Гарипова (Казань)</div>
                     <div class="diz-info">стилист-инфлюенсер</div>
                 </div>
                 <img class="diz-photo" src="img/dz garip.svg" alt="diz">
             </div>
             <div class="programm-item aic">
-                <img class="diz-photo" src="img/dz aver.svg" alt="diz">
+                <img class="diz-photo" src="img/dz utochka.svg" alt="diz">
                 <div class="programm-item-content">
-                    <div class="diz-name">Екатерина Уточкина (г. Казань)</div>
+                    <div class="diz-name">Екатерина Уточкина (Казань)</div>
                     <div class="diz-info">стилист-инфлюенсер, работает с размером + Size</div>
                 </div>
             </div>
@@ -186,9 +193,9 @@
                 <img class="diz-photo" src="img/dz aver.svg" alt="diz">
             </div>
             <div class="programm-item aic">
-                <img class="diz-photo" src="img/dz aver.svg" alt="diz">
+                <img class="diz-photo" src="img/dz utochka.svg" alt="diz">
                 <div class="programm-item-content">
-                    <div class="diz-name">Екатерина Уточкина (г. Казань)</div>
+                    <div class="diz-name">Екатерина Уточкина (Казань)</div>
                     <div class="diz-info">стилист-инфлюенсер, работает с размером + Size</div>
                 </div>
             </div>
@@ -246,5 +253,42 @@
     <img class="pattern ex-pattern-gray-right" src="img/pattern-gray-ex-right.svg" alt="about-pattern-gray">    
     <img class="pattern ex-pattern-green-right" src="img/pattern-gray-ex-bottom.svg" alt="about-pattern-gray">
 </section>
+
+<section id="category" class="category">
+    <div class="container">
+        <div class="category-contant">
+            <div style="text-align: left;" class="title">Отбор по<br>категориям<br>одежды</div>
+            <div class="tags">
+                <div class="tag">Женская одежда</div>
+                <div class="tag">Мужская одежда</div>
+                <div class="tag">Детская одежда</div>
+                <div class="tag">Спортивная одежда</div>
+                <div class="tag">Одежда в этно стиле</div>
+                <div class="tag">Головные уборы</div>
+                <div class="tag">Сумки</div>
+            </div>
+        </div>
+        <img class="category-man" src="img/category man.png" alt="category-man">
+    </div>
+    <img class="pattern pattern-gray-category" src="img/pattern-gray-category.svg" alt="pattern-gray-category">
+</section>
+
+<section id="application" class="application">
+    <div class="container">
+        <div class="application-contant">
+            <div class="title karakuz-market-title">Принять<br>участие</div>
+            <p class="strong-text karakuz-market-strong-text">Заявка на участие принимается на&nbsp;электронную почту</p> 
+            <p class="btn-application strong-text">karakuzmarket2024@ya.ru</p>
+            <p class="strong-text karakuz-market-strong-text">После подтверждения участия вы будете добавлены в закрытую группу участников маркета в Telegram</p>
+        </div>
+    </div>
+    <img class="pattern market-pattern-green-right-2" src="img/pattern-gray-green-right-2.svg" alt="about-pattern-gray">
+    <img class="pattern market-pattern-green-right" src="img/pattern-gray-green-right.svg" alt="about-pattern-gray">
+    <img class="pattern market-pattern-green-left" src="img/pattern-gray-green-left.svg" alt="about-pattern-gray">
+</section>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
