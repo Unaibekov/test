@@ -1,0 +1,24 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 40px 0;
+    z-index: 10;
+}
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: 80px;
+}
+nav {
+    display: none;
+}

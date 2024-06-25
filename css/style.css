@@ -1,0 +1,357 @@
+@import url("header-footer.css");
+
+@font-face {
+    font-family: 'druktextwidecyr-heavy';
+    src: url('/fonts/druktextwidecyr-heavy.otf'),
+    url('/fonts/druktextwidecyr-heavy.otf'),
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main: #64B572;
+    --blue: #02747E;
+    --black: #1C1C1C;
+    --body: #ffffff;
+    --transition: all 0.3s ease-in-out;
+}
+body {
+    background-color: var(--body);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: var(--black);
+}
+body::-webkit-scrollbar-track {
+    background-color: #535353;
+}
+body::-webkit-scrollbar {
+    width: 13px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+}
+h1, h2, h3 {
+    margin-top: 0px!important;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.4;
+    margin-top: 0;
+}
+.aic {
+    align-items: center;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+
+.main {
+    position: relative;
+    max-height: 6000px;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.pattern {
+    opacity: 0.8;
+}
+.main-pattern-gray {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    width: 65%;
+}
+.main-pattern-red {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    z-index: 0;
+    width: 35%;
+}
+.main-images {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    z-index: 1;
+    width: 50%;
+}
+.main-image-girl {
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    top: 0;
+    height: 75vh;
+}
+.main-green-cloth {
+    right: -35px;
+    position: absolute;
+    width: 100%;
+    margin-top: -60px;
+}
+.main-heading {
+    position: relative;
+    top: 28vh;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.about {
+    margin-top: 80vh;
+    text-align: center;
+    max-width: 950px;
+}
+.title {
+    font-family: 'druktextwidecyr-heavy', sans-serif;
+    font-size: 62px;
+    color: var(--main);
+    text-align: center;
+    margin-bottom: 60px;
+}
+.strong-text {
+    font-size: 32px;
+    font-weight: 700;
+}
+.about-image {
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+.about-pattern-gray {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 50%;
+}
+section {
+    padding: 120px 0;
+    position: relative;
+}
+
+/* karakuz-market ================= */
+.karakuz-market {
+    background-color: var(--blue);
+}
+.karakuz-market .container {
+    position: relative;
+    z-index: 1;
+}
+.karakuz-market-title, .karakuz-market-strong-text {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.karakuz-market-pay {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 60px 0 20px 0;
+}
+.karakuz-market-pay-small {
+    font-size: 20px;
+    color: #ffffff;
+}
+.market-pattern-green-right, .market-pattern-green-right-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+.market-pattern-green-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+/* place ========================= */
+.place { 
+    background-color: white;
+}
+.place-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.place-content {
+    flex-grow: 1;
+}
+.place-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.place-info {
+    display: flex;
+}
+.job-time {
+    max-width: 260px;
+    width: 100%;
+}
+.job-time-title, .statistic-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* programm ============= */ 
+.programm {
+    background-color: #efefef;
+}
+.programm-title {
+    font-family: 'druktextwidecyr-heavy';
+    font-size: 40px;
+    margin: 120px 0;
+    text-align: center;
+    color: var(--main);
+}
+.programm-items {
+    margin-top: 60px 0;
+}
+.programm-item {
+    display: flex;
+    gap: 40px;
+}
+.programm-item-content {
+    flex-grow: 1;
+    width: 100px;
+}
+.programm-time {
+    font-family: 'druktextwidecyr-heavy';
+    font-size: 32px;
+    width: 340px;
+}
+.one-time {
+    text-align: right;
+}
+.programm-info {
+    flex-grow: 1;
+    font-weight: 700; 
+    font-size: 24px;
+    width: 100px;
+}
+.diz-photos {
+    display: flex;
+    align-items: center;
+}
+.diz-photo {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+}
+.diz-photo-second {
+    margin-left: -90px;
+}
+.diz-name {
+    font-family: 'druktextwidecyr-heavy';
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.diz-info {
+    font-size: 24px;
+}
+.patterns-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.patterns-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.programm-pattern-green-right {
+    margin-bottom: 200%;
+    width: 100%;
+}
+.programm-pattern-green-left {
+    margin-top: 200%;
+    width: 100%;
+}
+
+/* expectation ================== */
+.expectation {
+    background-color: white;
+}
+.tags {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tag {
+    padding: 14px 20px;
+    font-size: 20px;
+    border: 2px solid var(--main);
+    border-radius: 100px;
+}
+.ex-images {
+    margin-top: 60px;
+}
+.ex-image-mirror {
+    border-radius: 30px;
+    transform: rotate(-14deg);
+    position: relative;
+    z-index: 2;
+}
+.ex-image-hanging {
+    border-radius: 30px;
+    transform: rotate(7deg) translateY(35px);
+    position: relative;
+    z-index: 3;
+}
+.ex-image-sir {
+    border-radius: 30px;
+    transform: rotate(-6deg) translateY(16px);
+    position: relative;
+    z-index: 4;
+}
+.ex-pattern-green-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+.ex-pattern-gray-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+
+@media (max-width: 1921px) {
+    .about {
+        margin-top: 60vh;
+    }
+}
+@media (max-width: 1920px) {
+    .about {
+        margin-top: 80vh;
+    }
+}
