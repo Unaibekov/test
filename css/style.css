@@ -11,6 +11,7 @@
 :root {
     --main: #64B572;
     --blue: #02747E;
+    --gray: #efefef;
     --black: #1C1C1C;
     --body: #ffffff;
     --transition: all 0.3s ease-in-out;
@@ -77,19 +78,12 @@ p {
     z-index: 0;
     width: 35%;
 }
-.main-images {
-    position: absolute;
-    right: 0;
-    top: 120px;
-    z-index: 1;
-    width: 50%;
-}
 .main-image-girl {
     position: absolute;
-    z-index: -1;
-    right: 5%;
-    top: 0;
-    height: 75vh;
+    right: 0;
+    top: 50px;
+    z-index: 1;
+    width: 50%;
 }
 .main-green-cloth {
     right: -35px;
@@ -100,9 +94,10 @@ p {
 .main-heading {
     position: relative;
     top: 28vh;
+    width: 60%;
 }
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
 }
@@ -110,6 +105,8 @@ p {
     margin-top: 80vh;
     text-align: center;
     max-width: 950px;
+    position: relative;
+    z-index: 1;
 }
 .title {
     font-family: 'druktextwidecyr-heavy', sans-serif;
@@ -142,8 +139,9 @@ section {
 }
 
 /* karakuz-market ================= */
-.karakuz-market {
+.karakuz-market, .application {
     background-color: var(--blue);
+    overflow: hidden;
 }
 .karakuz-market .container {
     position: relative;
@@ -183,9 +181,11 @@ section {
 /* place ========================= */
 .place { 
     background-color: white;
+    overflow: hidden;
 }
 .place-wrapper {
     display: flex;
+    flex-direction: row;
     gap: 40px;
     align-items: center;
     position: relative;
@@ -212,8 +212,9 @@ section {
 }
 
 /* programm ============= */ 
-.programm {
-    background-color: #efefef;
+.programm, .category  {
+    background-color: var(--gray);
+    overflow: hidden;
 }
 .programm-title {
     font-family: 'druktextwidecyr-heavy';
@@ -297,6 +298,7 @@ section {
 /* expectation ================== */
 .expectation {
     background-color: white;
+    overflow: hidden;
 }
 .tags {
     display: flex; 
@@ -343,7 +345,40 @@ section {
     z-index: 0;
 }
 
+/* category */
+.category-contant {
+    width: 60%;
+    position: relative;
+    z-index: 1;
+}
+.category-man {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 2;
+}
+.pattern-gray-category {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
 
+/* application ================ */
+.application-contant {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    width: 100%;
+}
+.btn-application {
+    display: inline-block; 
+    color: white; 
+    padding: 14px 20px; 
+    border: 2px solid white; 
+    border-radius: 40px;
+}
 
 @media (max-width: 1921px) {
     .about {
@@ -353,5 +388,123 @@ section {
 @media (max-width: 1920px) {
     .about {
         margin-top: 80vh;
+    }
+}
+@media (max-width: 480px) {
+    .title {
+        font-size: 36px;
+    }
+    .main-image-girl {
+        top: 270px;
+        width: 100%;
+    }
+    .main-heading {
+        top: 80px;
+        width: 100%;
+    }
+    .main-pattern-red {
+        top: 200px;
+        width: 35%;
+    }
+    .place-wrapper {
+        flex-direction: column;
+    }
+    .place-info {
+        flex-direction: column;
+    }
+    .programm-item {
+        flex-direction: column;
+    }
+    .programm-title {
+        font-size: 24px;
+    }
+    .about {
+        margin-top: 700px;
+    }
+    .strong-text {
+        font-size: 20px;
+    }
+    .about-pattern-gray {
+        width: 100%;
+    }
+    .market-pattern-green-right, .market-pattern-green-right-2 {
+        right: -80%;
+    }
+    .market-pattern-green-left {
+        display: none;
+    }
+    .patterns-right {
+        right: -30%;
+        opacity: 0.5;
+    }
+    .patterns-left {
+        left: -15%;
+        opacity: 0.5;
+    }
+    .programm-item {
+        margin-bottom: 60px;
+        gap: 20px;
+        text-align: center;
+    }
+    .programm-items .programm-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .programm-title {
+        margin: 60px 0;
+    }
+    .programm-info {
+        font-size: 20px;
+        width: unset;
+    }
+    .programm-item-content {
+        flex-grow: 1;
+        width: unset;
+        text-align: center;
+    }
+    .diz-name {
+        font-size: 24px;
+    }
+    .diz-info {
+        font-size: 20px;
+    }
+    .diz-photo, .diz-photo-second {
+        width: 60%;
+    }
+    .one-time {
+        text-align: center;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .tag {
+        border-radius: 20px;
+    }
+    .ex-image-mirror, .ex-image-hanging, .ex-image-sir {
+        width: 100%;
+    }
+    .ex-image-hanging {
+        transform: rotate(7deg) translateY(-100px);
+    }
+    .ex-image-sir {
+        transform: rotate(-6deg) translate(30px, -180px);
+    }
+    .ex-pattern-green-right {
+        right: -146%;
+        height: 30%;
+    }
+    .ex-image-mirror {
+        transform: rotate(-10deg) translateX(20px);
+    }
+    .category {
+        height: 1400px;
+    }
+    .category-man {
+        right: -30%;
+    }
+    .category-contant {
+        width: 90%;
+    }
+    .pattern-gray-category {
+        left: 0;
     }
 }
